@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className='p-5 shadow-lg w-[12rem]'>
       <ul>
-        <li>Home</li>
+        <li><Link to="/" >Home</Link></li>
         <li>Shorts</li>
         <li>Live</li>
         <li>Video</li>

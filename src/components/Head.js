@@ -2,6 +2,7 @@ import React from 'react'
 import { humburger_menu, logo, user_icon } from '../Utils/Constant'
 import { useDispatch } from 'react-redux'
 import { toggleMenuOpen } from '../Utils/appSlice'
+import { Link } from 'react-router-dom'
 
 const Head = () => {
   const dispatch = useDispatch()
@@ -17,7 +18,7 @@ const Head = () => {
           src={humburger_menu} onClick={() => toggleHandler()}
           alt='menu'
         />
-        <img src={logo} className='h-14 mx-2'
+        <img src={logo} className='h-14 mx-2 cursor-pointer'
           alt='logo'
         />
       </div>
