@@ -7,20 +7,25 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorComp from './components/ErrorComp';
 import MainContainer from './components/MainContainer';
 import WatchPage from './components/WatchPage';
+import Checker from './components/Checker';
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <Body />,
     errorElement: <ErrorComp />,
-    children:[
+    children: [
       {
         path: "/",
         element: <MainContainer />
       },
       {
-        path:"/watch",
+        path: "/watch",
         element: <WatchPage />
+      },
+      {
+        path: "/checker",
+        element: <Checker />
       }
     ]
   }
